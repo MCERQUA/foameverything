@@ -15,10 +15,10 @@ export function HeroBanner() {
           src="/images/Foam-Everything-Header.webp"
           alt="Foam Everything"
           fill
-          className="object-cover opacity-40"
+          className="object-cover opacity-60"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[var(--bg-black)] via-[var(--bg-black)]/70 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[var(--bg-black)]/90 via-[var(--bg-black)]/40 to-transparent" />
       </div>
 
       {/* Animated Background Elements - using deterministic positions to avoid hydration mismatch */}

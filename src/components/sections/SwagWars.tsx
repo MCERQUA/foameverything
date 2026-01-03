@@ -15,9 +15,9 @@ export function SwagWars() {
           src="/images/swagwars-trenches.jpg"
           alt="Swag Wars"
           fill
-          className="object-cover opacity-30"
+          className="object-cover opacity-50"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[var(--bg-black)] via-[var(--bg-black)]/80 to-[var(--bg-black)]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[var(--bg-black)]/80 via-[var(--bg-black)]/50 to-[var(--bg-black)]/80" />
       </div>
 
       {/* Gold Accent Lines */}
