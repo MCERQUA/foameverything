@@ -6,7 +6,7 @@ import { motion, useSpring, useTransform } from 'motion/react';
 interface MagneticButtonProps {
   children: ReactNode;
   className?: string;
-  variant?: 'primary' | 'red' | 'gold' | 'nascar' | 'preorder' | 'onlyfoam';
+  variant?: 'primary' | 'secondary' | 'red' | 'gold' | 'nascar' | 'preorder' | 'onlyfoam';
   magneticStrength?: number;
   onClick?: () => void;
   href?: string;
@@ -16,6 +16,7 @@ interface MagneticButtonProps {
 
 const variantClasses: Record<string, string> = {
   primary: 'btn-primary',
+  secondary: 'bg-transparent text-white border-2 border-white/30 rounded-full px-7 py-3 hover:border-[var(--neon-cyan)] hover:text-[var(--neon-cyan)] hover:shadow-[0_0_15px_rgba(0,255,255,0.3)] transition-all',
   red: 'btn-red',
   gold: 'btn-gold',
   nascar: 'btn-nascar',

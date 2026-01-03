@@ -1,0 +1,71 @@
+# Foam Everything - Spray Foam Industry Merchandise
+
+> The #1 destination for spray foam industry merchandise and apparel.
+
+## About
+
+Foam Everything is the premier online store for spray foam industry professionals. We offer high-quality apparel including hoodies, t-shirts, and longsleeves featuring unique designs that celebrate the spray foam culture and community.
+
+## Products
+
+We sell spray foam industry merchandise:
+
+- **Hoodies** ($45-55): Premium hoodies with industry-themed designs
+- **T-Shirts** ($25-35): Comfortable tees for everyday wear
+- **Longsleeves** ($32-42): Long sleeve shirts for all seasons
+- **Vegas 2026 Collection**: Exclusive pre-order merchandise for SprayFoam 2026 Convention
+
+## Brands
+
+- **Foam Everything**: Our flagship brand with parody and original designs
+- **Spray Foam Racing**: NASCAR-themed spray foam merchandise
+- **Vegas 2026**: Convention exclusive merchandise
+- **OnlyFoam**: Alternative lifestyle brand for spray foam pros
+
+## Featured Event
+
+### SprayFoam 2026 Convention & Expo
+- **Dates**: March 22-25, 2026
+- **Location**: Westgate Las Vegas Resort & Casino, Las Vegas, NV
+- **Pre-orders**: Available now with early bird pricing (10-15% off)
+- **Fulfillment**: Ship before event or convention pickup
+
+## Swag Wars
+
+Swag Wars is our competitive event series where spray foam professionals compete for prizes and bragging rights. Register at /swagwars.
+
+## Industry Network
+
+We're part of the spray foam media ecosystem:
+- SprayFoamTV.com - 24/7 streaming platform
+- SprayFoamRadio.com - AI-generated industry music
+- NerfFusion.com - Custom Nerf accessories for convention foam wars
+
+## Contact
+
+- Website: https://foameverything.com
+- Email: info@foameverything.com
+- Contact form: https://foameverything.com/contact
+
+## Navigation
+
+- Home: /
+- Shop: /shop
+- Vegas 2026: /shop/vegas-2026
+- Hoodies: /shop/hoodies
+- T-Shirts: /shop/tshirts
+- Longsleeves: /shop/longsleeves
+- Swag Wars: /swagwars
+- Contact: /contact
+- Cart: /cart
+- Account: /account
+
+## Technical
+
+- Platform: Next.js e-commerce
+- Payments: Stripe
+- Forms: Netlify
+
+## Optional
+
+- llms-full.txt: /llms-full.txt (extended product catalog)

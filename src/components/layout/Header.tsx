@@ -6,10 +6,7 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X, ShoppingCart, User } from 'lucide-react';
 import { MagneticButton } from '@/components/ui/MagneticButton';
-
-interface HeaderProps {
-  cartCount?: number;
-}
+import { useCart } from '@/context/CartContext';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -18,8 +15,9 @@ const navLinks = [
   { href: '/swagwars', label: 'Swag Wars' },
 ];
 
-export function Header({ cartCount = 0 }: HeaderProps) {
+export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { totalItems } = useCart();
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[var(--bg-black)]/90 backdrop-blur-md border-b border-white/10">
@@ -72,13 +70,13 @@ export function Header({ cartCount = 0 }: HeaderProps) {
                 className="p-2 text-white/80 hover:text-[var(--neon-cyan)] transition-colors"
               >
                 <ShoppingCart className="w-5 h-5" />
-                {cartCount > 0 && (
+                {totalItems > 0 && (
                   <motion.span
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
                     className="absolute -top-1 -right-1 w-5 h-5 flex items-center justify-center bg-[var(--neon-red)] text-white text-xs font-bold rounded-full shadow-[0_0_10px_var(--neon-red)]"
                   >
-                    {cartCount}
+                    {totalItems}
                   </motion.span>
                 )}
               </motion.div>

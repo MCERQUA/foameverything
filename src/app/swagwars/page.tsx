@@ -1,12 +1,13 @@
 'use client';
 
+import { useState } from 'react';
 import Image from 'next/image';
 import { motion } from 'motion/react';
 import { LetterAnimation } from '@/components/animations/LetterAnimation';
 import { MagneticButton } from '@/components/ui/MagneticButton';
 import { ScrollReveal } from '@/components/animations/ScrollReveal';
 import { TiltCard } from '@/components/ui/TiltCard';
-import { Trophy, Sword, Target, Users, Gift, Zap } from 'lucide-react';
+import { Trophy, Sword, Target, Users, Gift, Zap, Send } from 'lucide-react';
 
 const features = [
   {
@@ -154,42 +155,179 @@ export default function SwagWarsPage() {
       <section id="signup" className="py-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-[var(--gold-dark)]/20 to-transparent" />
 
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <ScrollReveal variant="scale">
-            <Trophy className="w-20 h-20 text-[var(--gold)] mx-auto mb-8" />
-          </ScrollReveal>
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <ScrollReveal variant="scale">
+              <Trophy className="w-20 h-20 text-[var(--gold)] mx-auto mb-8" />
+            </ScrollReveal>
 
-          <LetterAnimation
-            text="JOIN THE BATTLE"
-            variant="cascade"
-            as="h2"
-            className="text-4xl md:text-5xl font-black uppercase tracking-wider heading-yellow mb-6"
-            staggerDelay={0.05}
-          />
+            <LetterAnimation
+              text="JOIN THE BATTLE"
+              variant="cascade"
+              as="h2"
+              className="text-4xl md:text-5xl font-black uppercase tracking-wider heading-yellow mb-6"
+              staggerDelay={0.05}
+            />
 
-          <ScrollReveal variant="fadeUp" delay={0.3}>
-            <p className="text-lg text-white/70 mb-8 max-w-xl mx-auto">
-              Sign up now to receive updates about upcoming Swag Wars events,
-              competition rules, and exclusive participant perks.
-            </p>
-          </ScrollReveal>
+            <ScrollReveal variant="fadeUp" delay={0.3}>
+              <p className="text-lg text-white/70 mb-8 max-w-xl mx-auto">
+                Sign up now to receive updates about upcoming Swag Wars events,
+                competition rules, and exclusive participant perks.
+              </p>
+            </ScrollReveal>
+          </div>
 
-          <ScrollReveal variant="fadeUp" delay={0.5}>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <MagneticButton
-                href="mailto:info@foameverything.com?subject=Swag Wars Registration"
-                variant="gold"
-                className="text-lg px-8 py-4"
+          {/* Registration Form */}
+          <ScrollReveal variant="fadeUp" delay={0.4}>
+            <div className="max-w-2xl mx-auto bg-[var(--bg-charcoal)] rounded-2xl p-8 border border-[var(--gold)]/30 shadow-[0_0_30px_rgba(255,215,0,0.1)]">
+              <form
+                name="swagwars-registration"
+                method="POST"
+                action="/swagwars/success"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+                className="space-y-6"
               >
-                Register Interest
-              </MagneticButton>
-              <MagneticButton
-                href="/shop"
-                variant="primary"
-                className="text-lg px-8 py-4"
-              >
-                Get Swag Wars Gear
-              </MagneticButton>
+                {/* Netlify form name */}
+                <input type="hidden" name="form-name" value="swagwars-registration" />
+
+                {/* Honeypot field */}
+                <p className="hidden">
+                  <label>
+                    Don&apos;t fill this out: <input name="bot-field" />
+                  </label>
+                </p>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  <div>
+                    <label htmlFor="swag-firstName" className="block text-sm font-medium text-white mb-2">
+                      First Name *
+                    </label>
+                    <input
+                      type="text"
+                      id="swag-firstName"
+                      name="firstName"
+                      required
+                      className="w-full bg-[var(--bg-dark-grey)] border border-[var(--gold)]/30 rounded-lg px-4 py-3 text-white placeholder-[var(--text-muted)] focus:border-[var(--gold)] focus:outline-none focus:ring-1 focus:ring-[var(--gold)]"
+                      placeholder="John"
+                    />
+                  </div>
+
+                  <div>
+                    <label htmlFor="swag-lastName" className="block text-sm font-medium text-white mb-2">
+                      Last Name *
+                    </label>
+                    <input
+                      type="text"
+                      id="swag-lastName"
+                      name="lastName"
+                      required
+                      className="w-full bg-[var(--bg-dark-grey)] border border-[var(--gold)]/30 rounded-lg px-4 py-3 text-white placeholder-[var(--text-muted)] focus:border-[var(--gold)] focus:outline-none focus:ring-1 focus:ring-[var(--gold)]"
+                      placeholder="Doe"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label htmlFor="swag-email" className="block text-sm font-medium text-white mb-2">
+                    Email Address *
+                  </label>
+                  <input
+                    type="email"
+                    id="swag-email"
+                    name="email"
+                    required
+                    className="w-full bg-[var(--bg-dark-grey)] border border-[var(--gold)]/30 rounded-lg px-4 py-3 text-white placeholder-[var(--text-muted)] focus:border-[var(--gold)] focus:outline-none focus:ring-1 focus:ring-[var(--gold)]"
+                    placeholder="john@example.com"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="swag-company" className="block text-sm font-medium text-white mb-2">
+                    Company Name
+                  </label>
+                  <input
+                    type="text"
+                    id="swag-company"
+                    name="company"
+                    className="w-full bg-[var(--bg-dark-grey)] border border-[var(--gold)]/30 rounded-lg px-4 py-3 text-white placeholder-[var(--text-muted)] focus:border-[var(--gold)] focus:outline-none focus:ring-1 focus:ring-[var(--gold)]"
+                    placeholder="Your Company"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="swag-experience" className="block text-sm font-medium text-white mb-2">
+                    Experience Level
+                  </label>
+                  <select
+                    id="swag-experience"
+                    name="experience"
+                    className="w-full bg-[var(--bg-dark-grey)] border border-[var(--gold)]/30 rounded-lg px-4 py-3 text-white focus:border-[var(--gold)] focus:outline-none focus:ring-1 focus:ring-[var(--gold)]"
+                  >
+                    <option value="">Select your experience level</option>
+                    <option value="rookie">Rookie (0-2 years)</option>
+                    <option value="intermediate">Intermediate (3-5 years)</option>
+                    <option value="veteran">Veteran (6-10 years)</option>
+                    <option value="legend">Industry Legend (10+ years)</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-white mb-3">
+                    Participation Type
+                  </label>
+                  <div className="space-y-3">
+                    <label className="flex items-center gap-3 cursor-pointer">
+                      <input
+                        type="radio"
+                        name="participationType"
+                        value="individual"
+                        defaultChecked
+                        className="w-5 h-5 accent-[var(--gold)]"
+                      />
+                      <span className="text-white">Individual Competitor</span>
+                    </label>
+                    <label className="flex items-center gap-3 cursor-pointer">
+                      <input
+                        type="radio"
+                        name="participationType"
+                        value="team"
+                        className="w-5 h-5 accent-[var(--gold)]"
+                      />
+                      <span className="text-white">Team Captain</span>
+                    </label>
+                    <label className="flex items-center gap-3 cursor-pointer">
+                      <input
+                        type="radio"
+                        name="participationType"
+                        value="spectator"
+                        className="w-5 h-5 accent-[var(--gold)]"
+                      />
+                      <span className="text-white">Spectator</span>
+                    </label>
+                  </div>
+                </div>
+
+                <motion.button
+                  type="submit"
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="w-full bg-[var(--gold)] text-black font-bold py-4 px-6 rounded-xl flex items-center justify-center gap-2 shadow-[0_0_20px_var(--gold)] hover:shadow-[0_0_30px_var(--gold)] transition-all"
+                >
+                  <Sword className="w-5 h-5" />
+                  Register for Swag Wars
+                </motion.button>
+              </form>
+
+              <div className="mt-6 text-center">
+                <MagneticButton
+                  href="/shop"
+                  variant="primary"
+                  className="text-sm px-6 py-2"
+                >
+                  Get Swag Wars Gear
+                </MagneticButton>
+              </div>
             </div>
           </ScrollReveal>
         </div>

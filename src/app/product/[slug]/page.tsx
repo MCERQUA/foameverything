@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import Head from 'next/head';
 import { useParams, notFound } from 'next/navigation';
 import { motion } from 'motion/react';
 import { LetterAnimation } from '@/components/animations/LetterAnimation';
@@ -11,6 +12,8 @@ import { ProductCard } from '@/components/ui/ProductCard';
 import { getProductBySlug, products, getProductPriceDisplay } from '@/lib/products';
 import { calculatePrice, formatPrice, ProductSize } from '@/types/product';
 import { Minus, Plus, ShoppingCart, Heart, Share2, Check } from 'lucide-react';
+import { useCart } from '@/context/CartContext';
+import Script from 'next/script';
 
 const sizes: ProductSize[] = ['SM', 'M', 'L', 'XL', '2XL', '3XL'];
 
@@ -18,6 +21,7 @@ export default function ProductPage() {
   const params = useParams();
   const slug = params.slug as string;
   const product = getProductBySlug(slug);
+  const { addItem } = useCart();
 
   const [selectedSize, setSelectedSize] = useState<ProductSize>('M');
   const [quantity, setQuantity] = useState(1);
@@ -34,8 +38,15 @@ export default function ProductPage() {
   const finalPrice = calculatePrice(currentPrice, selectedSize);
 
   const handleAddToCart = () => {
-    // Cart logic will be implemented with context
-    console.log('Adding to cart:', { product, selectedSize, quantity });
+    addItem({
+      productId: product.id,
+      name: product.name,
+      price: finalPrice,
+      image: product.image,
+      size: selectedSize,
+      quantity: quantity,
+      isPreorder: product.isPreorder,
+    });
     setIsAddedToCart(true);
     setTimeout(() => setIsAddedToCart(false), 2000);
   };
@@ -45,7 +56,71 @@ export default function ProductPage() {
     .filter(p => p.category === product.category && p.id !== product.id)
     .slice(0, 4);
 
+  // Product schema for SEO
+  const productSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: product.name,
+    description: product.description,
+    image: `https://foameverything.com${product.image}`,
+    brand: {
+      "@type": "Brand",
+      name: product.brand.replace('-', ' ').replace(/\b\w/g, (l: string) => l.toUpperCase()),
+    },
+    category: product.category,
+    offers: {
+      "@type": "Offer",
+      url: `https://foameverything.com/product/${product.slug}`,
+      priceCurrency: "USD",
+      price: finalPrice.toFixed(2),
+      availability: product.isPreorder
+        ? "https://schema.org/PreOrder"
+        : "https://schema.org/InStock",
+      seller: {
+        "@type": "Organization",
+        name: "Foam Everything",
+      },
+    },
+  };
+
+  // Breadcrumb schema for SEO
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://foameverything.com",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Shop",
+        item: "https://foameverything.com/shop",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: product.name,
+        item: `https://foameverything.com/product/${product.slug}`,
+      },
+    ],
+  };
+
   return (
+    <>
+      <Script
+        id="product-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+      />
+      <Script
+        id="breadcrumb-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
     <div className="min-h-screen bg-[var(--bg-black)] py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumb */}
@@ -284,5 +359,6 @@ export default function ProductPage() {
         )}
       </div>
     </div>
+    </>
   );
 }

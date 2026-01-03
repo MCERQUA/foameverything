@@ -1,0 +1,46 @@
+{
+  "name": "Foam Everything",
+  "short_name": "FoamEverything",
+  "description": "The #1 destination for spray foam industry merchandise and apparel",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#00ffff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/images/smlogo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/smlogo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["shopping", "business"],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Shop All Products",
+      "short_name": "Shop",
+      "url": "/shop",
+      "description": "Browse all spray foam merchandise"
+    },
+    {
+      "name": "Vegas 2026",
+      "short_name": "Vegas 2026",
+      "url": "/shop/vegas-2026",
+      "description": "Pre-order Vegas 2026 Convention merchandise"
+    },
+    {
+      "name": "Swag Wars",
+      "short_name": "Swag Wars",
+      "url": "/swagwars",
+      "description": "Join the Swag Wars competition"
+    }
+  ]
+}

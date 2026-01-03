@@ -1,9 +1,10 @@
 'use client';
 
+import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'motion/react';
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, Send } from 'lucide-react';
 
 const footerLinks = {
   shop: [
@@ -49,11 +50,49 @@ export function Footer() {
                 className="h-12 w-auto"
               />
             </Link>
-            <p className="text-[var(--text-grey)] text-sm max-w-md">
+            <p className="text-[var(--text-grey)] text-sm max-w-md mb-6">
               The #1 destination for spray foam industry merchandise.
               Representing the culture, connecting the community.
             </p>
-            <div className="mt-6">
+
+            {/* Newsletter Signup */}
+            <div className="mb-6">
+              <p className="text-xs text-[var(--text-muted)] uppercase tracking-wider mb-3">
+                Stay Updated
+              </p>
+              <form
+                name="newsletter"
+                method="POST"
+                action="/newsletter/success"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+                className="flex gap-2"
+              >
+                <input type="hidden" name="form-name" value="newsletter" />
+                <p className="hidden">
+                  <label>
+                    Don&apos;t fill this out: <input name="bot-field" />
+                  </label>
+                </p>
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="Enter your email"
+                  className="flex-1 bg-[var(--bg-charcoal)] border border-white/20 rounded-lg px-4 py-2 text-sm text-white placeholder-[var(--text-muted)] focus:border-[var(--neon-cyan)] focus:outline-none focus:ring-1 focus:ring-[var(--neon-cyan)]"
+                />
+                <motion.button
+                  type="submit"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="bg-[var(--neon-cyan)] text-black px-4 py-2 rounded-lg font-medium text-sm hover:shadow-[0_0_15px_var(--neon-cyan)] transition-shadow"
+                >
+                  <Send className="w-4 h-4" />
+                </motion.button>
+              </form>
+            </div>
+
+            <div>
               <p className="text-xs text-[var(--text-muted)] uppercase tracking-wider mb-2">
                 Vegas 2026 Convention
               </p>

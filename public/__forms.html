@@ -1,0 +1,35 @@
+<!--
+  This file helps Netlify detect forms during build time.
+  It's not meant to be accessed directly.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Detection</title>
+</head>
+<body>
+  <!-- Contact Form -->
+  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <input type="text" name="firstName" />
+    <input type="text" name="lastName" />
+    <input type="email" name="email" />
+    <input type="text" name="subject" />
+    <textarea name="message"></textarea>
+  </form>
+
+  <!-- Newsletter Form -->
+  <form name="newsletter" netlify netlify-honeypot="bot-field" hidden>
+    <input type="email" name="email" />
+  </form>
+
+  <!-- SwagWars Registration Form -->
+  <form name="swagwars-registration" netlify netlify-honeypot="bot-field" hidden>
+    <input type="text" name="firstName" />
+    <input type="text" name="lastName" />
+    <input type="email" name="email" />
+    <input type="text" name="company" />
+    <input type="text" name="experience" />
+    <input type="text" name="participationType" />
+  </form>
+</body>
+</html>
