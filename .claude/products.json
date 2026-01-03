@@ -1,0 +1,333 @@
+{
+  "catalog_version": "2.0",
+  "last_updated": "2026-01-03",
+  "pricing_structure": {
+    "base_sizes": ["SM", "M", "L", "XL"],
+    "plus_sizes": {
+      "2XL": 2.50,
+      "3XL": 5.00,
+      "4XL": 7.50,
+      "5XL": 10.00
+    },
+    "note": "Plus size pricing is added to base price"
+  },
+  "base_prices": {
+    "tshirt": 25.00,
+    "hoodie": 45.00,
+    "longsleeve": 32.00
+  },
+  "designs": [
+    {
+      "id": "cortez-industries",
+      "name": "Cortez Industries",
+      "slug": "cortez-industries",
+      "description": "Jurassic Park parody logo with spray foam applicator silhouette. 'When the foam breaks free...'",
+      "parody_of": "Jurassic Park",
+      "colors": ["red", "yellow", "black"],
+      "style": "movie_parody",
+      "images": {
+        "tshirt": "/images/DONE/cortez tshirt.png",
+        "hoodie": "/images/Hoodies/cortez.png"
+      },
+      "available_as": ["tshirt", "hoodie"]
+    },
+    {
+      "id": "cream-time",
+      "name": "Spray Foam Cream Time",
+      "slug": "cream-time",
+      "description": "Retro diner/motel sign aesthetic with 'SPRAY FOAM' and 'CREAM TIME' neon signs",
+      "parody_of": "Vintage Americana signage",
+      "colors": ["teal", "orange", "cream", "red"],
+      "style": "retro_vintage",
+      "images": {
+        "tshirt": "/images/DONE/Creamtime tshirt.png",
+        "hoodie": "/images/Hoodies/creamtime.png"
+      },
+      "available_as": ["tshirt", "hoodie"]
+    },
+    {
+      "id": "dont-tread-on-me",
+      "name": "Don't Tread On Me",
+      "slug": "dont-tread-on-me",
+      "description": "Gadsden flag parody with coiled snake and Statue of Liberty holding spray foam gun. Patriotic foam pride.",
+      "parody_of": "Gadsden Flag / Don't Tread On Me",
+      "colors": ["grey", "white", "black"],
+      "style": "patriotic",
+      "images": {
+        "tshirt": "/images/DONE/dont treadonme.png",
+        "hoodie": "/images/Hoodies/donttread.png"
+      },
+      "available_as": ["tshirt", "hoodie"]
+    },
+    {
+      "id": "e30-foam-home",
+      "name": "E-30 Foam Home",
+      "slug": "e30-foam-home",
+      "description": "E.T. movie parody - spray foam applicator flying across the moon on a bike, spraying foam at a house. 'Phone home? Foam home!'",
+      "parody_of": "E.T. The Extra-Terrestrial",
+      "colors": ["blue", "yellow", "white"],
+      "style": "movie_parody",
+      "images": {
+        "tshirt": "/images/DONE/e30 foam home tshirt.png",
+        "hoodie": "/images/Hoodies/e30foamhome.png"
+      },
+      "available_as": ["tshirt", "hoodie"]
+    },
+    {
+      "id": "espuma",
+      "name": "Espuma",
+      "slug": "espuma",
+      "description": "Puma logo parody - leaping cat with 'ESPUMA' text (Spanish for foam). Perfect for bilingual crews.",
+      "parody_of": "Puma",
+      "colors": ["white"],
+      "style": "brand_parody",
+      "images": {
+        "tshirt": "/images/DONE/espuma tshirt.png",
+        "hoodie": "/images/Hoodies/espuma.png"
+      },
+      "available_as": ["tshirt", "hoodie"]
+    },
+    {
+      "id": "foam-alone",
+      "name": "Foam Alone",
+      "slug": "foam-alone",
+      "description": "Home Alone movie parody logo. 'FOAM ALONE' in classic movie title typography with house silhouette.",
+      "parody_of": "Home Alone",
+      "colors": ["white", "red"],
+      "style": "movie_parody",
+      "images": {
+        "tshirt": "/images/DONE/foam alone tshirt.png",
+        "hoodie": "/images/Hoodies/foamalone.png"
+      },
+      "available_as": ["tshirt", "hoodie"]
+    },
+    {
+      "id": "foam-everything",
+      "name": "Foam Everything",
+      "slug": "foam-everything",
+      "description": "Original Foam Everything retro 80s logo with cyan/pink/purple gradient, triangular design with speed lines",
+      "parody_of": null,
+      "colors": ["cyan", "pink", "purple"],
+      "style": "retro_80s",
+      "images": {
+        "tshirt": "/images/DONE/foam everything tshirt.png"
+      },
+      "available_as": ["tshirt"],
+      "flagship": true
+    },
+    {
+      "id": "gi-foamer",
+      "name": "FOAMER - A Real Insulation Hero",
+      "slug": "gi-foamer",
+      "description": "GI Joe logo parody - 'FOAMER' with classic red/white/blue stripes. 'A Real Insulation Hero'",
+      "parody_of": "GI Joe",
+      "colors": ["white", "red", "blue"],
+      "style": "brand_parody",
+      "images": {
+        "tshirt": "/images/DONE/GI-FOamer tshirt.png",
+        "hoodie": "/images/Hoodies/insulationhero.png"
+      },
+      "available_as": ["tshirt", "hoodie"]
+    },
+    {
+      "id": "the-godfoamer",
+      "name": "The Godfoamer",
+      "slug": "the-godfoamer",
+      "description": "The Godfather movie parody - classic logo with puppet strings replaced by spray foam gun",
+      "parody_of": "The Godfather",
+      "colors": ["white"],
+      "style": "movie_parody",
+      "images": {
+        "tshirt": "/images/DONE/godfoamer tshirt.png",
+        "hoodie": "/images/Hoodies/The God Foamer.png"
+      },
+      "available_as": ["tshirt", "hoodie"]
+    },
+    {
+      "id": "gun-hog",
+      "name": "Gun Hog",
+      "slug": "gun-hog",
+      "description": "Angry wild boar mascot character holding spray foam gun. 'GUN HOG' - for the foam equipment obsessed.",
+      "parody_of": null,
+      "colors": ["brown", "red", "grey"],
+      "style": "mascot",
+      "images": {
+        "tshirt": "/images/DONE/gunhog ttshirt.png",
+        "hoodie": "/images/Hoodies/gunhog.png"
+      },
+      "available_as": ["tshirt", "hoodie"]
+    },
+    {
+      "id": "foam-guns-for-hire",
+      "name": "Foam Guns For Hire",
+      "slug": "foam-guns-for-hire",
+      "description": "Biker/outlaw style skull design with crossed spray foam guns. Dark, detailed artwork. 'We spray for pay.'",
+      "parody_of": null,
+      "colors": ["gold", "brown", "black"],
+      "style": "biker",
+      "images": {
+        "tshirt": "/images/DONE/guns for hire tshirt.png",
+        "hoodie": "/images/Hoodies/foamgunsforhire.png"
+      },
+      "available_as": ["tshirt", "hoodie"]
+    },
+    {
+      "id": "iso-inside",
+      "name": "ISO Inside - Polyurethane Processor",
+      "slug": "iso-inside",
+      "description": "Intel Inside logo parody - 'iso inside' with 'polyurethane processor' tagline. For the foam chemistry nerds.",
+      "parody_of": "Intel Inside",
+      "colors": ["white"],
+      "style": "brand_parody",
+      "images": {
+        "tshirt": "/images/DONE/iso inside tshirt.png",
+        "hoodie": "/images/Hoodies/iso inside.png"
+      },
+      "available_as": ["tshirt", "hoodie"]
+    },
+    {
+      "id": "licence-to-foam",
+      "name": "Licence to Foam",
+      "slug": "licence-to-foam",
+      "description": "Hot pink 80s script lettering - 'Licence to FOAM'. James Bond meets Miami Vice vibes.",
+      "parody_of": "Licence to Kill / James Bond",
+      "colors": ["hot_pink"],
+      "style": "retro_80s",
+      "images": {
+        "tshirt": "/images/DONE/licence to foam tshirt.png",
+        "hoodie": "/images/Hoodies/Licence to foam.png"
+      },
+      "available_as": ["tshirt", "hoodie"]
+    },
+    {
+      "id": "pay-me-experience",
+      "name": "Pay Me For My Experience",
+      "slug": "pay-me-experience",
+      "description": "Bold typography in shield shape - 'PAY ME for my EXPERIENCE not my TIME'. Industry pride statement.",
+      "parody_of": null,
+      "colors": ["white", "grey"],
+      "style": "typography",
+      "images": {
+        "tshirt": "/images/DONE/Pay me tshirt.png",
+        "hoodie": "/images/Hoodies/Paymeformytime.png"
+      },
+      "available_as": ["tshirt", "hoodie"]
+    },
+    {
+      "id": "ride-the-wave",
+      "name": "FoamLife - Ride The Wave",
+      "slug": "ride-the-wave",
+      "description": "Cartoon surfer character riding a massive wave of spray foam. 'FOAMLIFE - RIDE THE WAVE'. Fun and energetic.",
+      "parody_of": null,
+      "colors": ["yellow", "blue", "red"],
+      "style": "cartoon",
+      "images": {
+        "tshirt": "/images/DONE/ride the wave tshirt.png",
+        "hoodie": "/images/Hoodies/ridethewave.png"
+      },
+      "available_as": ["tshirt", "hoodie"]
+    },
+    {
+      "id": "sprayfoam-joker",
+      "name": "SprayFoam Joker",
+      "slug": "sprayfoam-joker",
+      "description": "Joker character in gas mask/respirator - 'SPRAYFOAM JOKER - Why So Serious?'. Dark comic book style.",
+      "parody_of": "The Joker / Batman",
+      "colors": ["green", "red", "grey"],
+      "style": "comic_villain",
+      "images": {
+        "tshirt": "/images/DONE/sf joker tshirt.png",
+        "hoodie": "/images/Hoodies/sprayfoam joker.png"
+      },
+      "available_as": ["tshirt", "hoodie"]
+    },
+    {
+      "id": "sprayfoam-life",
+      "name": "SprayFoam Life",
+      "slug": "sprayfoam-life",
+      "description": "Detailed skull wearing hard hat with spray foam gun - 'SPRAYFOAM LIFE - In Foam We Trust'. Biker/tattoo style.",
+      "parody_of": null,
+      "colors": ["yellow", "red", "bone"],
+      "style": "biker",
+      "images": {
+        "tshirt": "/images/DONE/sflife tshirt.png",
+        "hoodie": "/images/Hoodies/sprayfoamlife.png"
+      },
+      "available_as": ["tshirt", "hoodie"]
+    },
+    {
+      "id": "sprayfoam-brotherhood",
+      "name": "SprayFoam Brotherhood",
+      "slug": "sprayfoam-brotherhood",
+      "description": "Two gas-masked figures back-to-back - 'SPRAYFOAM BROTHERHOOD'. Band of brothers, foam edition.",
+      "parody_of": null,
+      "colors": ["grey", "white"],
+      "style": "biker",
+      "images": {
+        "tshirt": "/images/DONE/sprayfoam brotherhood tshirt.png",
+        "hoodie": "/images/Hoodies/brotherhood.png"
+      },
+      "available_as": ["tshirt", "hoodie"]
+    },
+    {
+      "id": "sprayfoam-nascar",
+      "name": "SprayFoam Insulation Racing",
+      "slug": "sprayfoam-nascar",
+      "description": "NASCAR-style racing logo with 'SPRAYFOAM Insulation' and racing stripes in yellow/red/white/blue",
+      "parody_of": "NASCAR racing logos",
+      "colors": ["yellow", "red", "white", "blue"],
+      "style": "racing",
+      "collection": "nascar",
+      "images": {
+        "tshirt": "/images/DONE/sprayfoam nascar.png"
+      },
+      "available_as": ["tshirt"]
+    },
+    {
+      "id": "straight-outta-crawlspace",
+      "name": "Straight Outta Crawlspace",
+      "slug": "straight-outta-crawlspace",
+      "description": "NWA/Straight Outta Compton parody - 'STRAIGHT OUTTA CRAWLSPACE' in iconic black and white typography",
+      "parody_of": "Straight Outta Compton / NWA",
+      "colors": ["white"],
+      "style": "music_parody",
+      "images": {
+        "hoodie": "/images/Hoodies/Straightouttacrawlspace.png"
+      },
+      "available_as": ["hoodie"]
+    }
+  ],
+  "collections": {
+    "parody": {
+      "name": "Parody Collection",
+      "description": "Movie, brand, and pop culture parodies for the spray foam industry",
+      "designs": ["cortez-industries", "e30-foam-home", "foam-alone", "the-godfoamer", "espuma", "gi-foamer", "iso-inside", "licence-to-foam", "sprayfoam-joker", "straight-outta-crawlspace"]
+    },
+    "lifestyle": {
+      "name": "Foam Life",
+      "description": "Industry pride and lifestyle designs",
+      "designs": ["foam-everything", "pay-me-experience", "sprayfoam-life", "sprayfoam-brotherhood", "ride-the-wave", "gun-hog", "foam-guns-for-hire"]
+    },
+    "patriotic": {
+      "name": "Patriotic",
+      "description": "USA-themed designs",
+      "designs": ["dont-tread-on-me"]
+    },
+    "retro": {
+      "name": "Retro Vibes",
+      "description": "Vintage and 80s inspired designs",
+      "designs": ["cream-time", "licence-to-foam", "foam-everything"]
+    },
+    "nascar": {
+      "name": "SprayFoam Racing",
+      "description": "NASCAR and racing themed apparel",
+      "designs": ["sprayfoam-nascar"]
+    }
+  },
+  "product_count": {
+    "total_designs": 20,
+    "tshirts": 19,
+    "hoodies": 18,
+    "total_skus": 37
+  }
+}

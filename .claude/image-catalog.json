@@ -1,0 +1,555 @@
+{
+  "catalog_version": "1.0",
+  "last_updated": "2026-01-03",
+  "total_images": 41,
+  "images": {
+    "branding": [
+      {
+        "filename": "smlogo.png",
+        "path": "/images/smlogo.png",
+        "size_bytes": 6560,
+        "size_human": "6.4 KB",
+        "description": "Foam Everything main logo - retro 80s style with cyan/pink/purple gradient, triangular design with speed lines",
+        "content": "Text 'FOAM Everything' in retro neon style",
+        "colors": ["cyan", "pink", "purple", "white"],
+        "style": "Retro 80s synthwave",
+        "use_cases": ["Header logo", "Favicon source", "Brand mark", "Social media avatar"],
+        "transparent_bg": true
+      },
+      {
+        "filename": "Foam-Everything-Header.webp",
+        "path": "/images/Foam-Everything-Header.webp",
+        "size_bytes": 268034,
+        "size_human": "262 KB",
+        "description": "Hero banner - Foam Everything logo with paint splatter effects, two foam barrels (red/blue) with dripping paint",
+        "content": "Brand logo centered over industrial barrels with red and blue paint splatter effects on dark background",
+        "colors": ["black", "red", "blue", "cyan", "pink"],
+        "aspect_ratio": "wide/banner",
+        "style": "Dark industrial with neon accents",
+        "use_cases": ["Homepage hero", "Email header", "Social media cover"]
+      },
+      {
+        "filename": "Foam-Everything-Header.jpg",
+        "path": "/images/Foam-Everything-Header.jpg",
+        "size_bytes": 421951,
+        "size_human": "412 KB",
+        "description": "Same as webp version - JPG fallback",
+        "use_cases": ["Fallback for older browsers"]
+      },
+      {
+        "filename": "foameverything.webp",
+        "path": "/images/foameverything.webp",
+        "size_bytes": 112706,
+        "size_human": "110 KB",
+        "description": "OnlyFoam Club 3D render - neon nightclub interior with 'OnlyFoam' sign, purple/pink/cyan lighting",
+        "content": "3D rendered metaverse club space with neon OnlyFoam branding, curved sofas, stage/platform",
+        "colors": ["purple", "magenta", "cyan", "black"],
+        "style": "Cyberpunk/Vaporwave metaverse",
+        "use_cases": ["OnlyFoam section background", "Spatial.io promo", "Metaverse feature"]
+      }
+    ],
+    "products_foam_everything": [
+      {
+        "filename": "Black-Tshirt-foam-everything.webp",
+        "path": "/images/Black-Tshirt-foam-everything.webp",
+        "size_bytes": 539930,
+        "size_human": "527 KB",
+        "description": "Black t-shirt mockup with Foam Everything retro logo on chest",
+        "product_type": "T-Shirt",
+        "color": "Black",
+        "brand": "Foam Everything",
+        "price_range": "$25-$28.50",
+        "use_cases": ["Product card", "Shop page", "Collection display"]
+      },
+      {
+        "filename": "Black-Tshirt-foam-everything.png",
+        "path": "/images/Black-Tshirt-foam-everything.png",
+        "size_bytes": 1307458,
+        "size_human": "1.2 MB",
+        "description": "PNG version - larger file, better for print",
+        "notes": "Use webp for web, png for high-quality needs"
+      },
+      {
+        "filename": "black-swetaer-foam-everything.webp",
+        "path": "/images/black-swetaer-foam-everything.webp",
+        "size_bytes": 488764,
+        "size_human": "477 KB",
+        "description": "Dark grey/charcoal hoodie with Foam Everything logo, front pocket, hood",
+        "product_type": "Hoodie",
+        "color": "Charcoal/Dark Grey",
+        "brand": "Foam Everything",
+        "price_range": "$38-$53",
+        "use_cases": ["Product card", "Featured product", "Collection display"]
+      },
+      {
+        "filename": "black-swetaer-foam-everything.png",
+        "path": "/images/black-swetaer-foam-everything.png",
+        "size_bytes": 1267505,
+        "size_human": "1.2 MB",
+        "description": "PNG version of hoodie"
+      },
+      {
+        "filename": "Foam_everything_longsleeve-web.webp",
+        "path": "/images/Foam_everything_longsleeve-web.webp",
+        "size_bytes": 46036,
+        "size_human": "45 KB",
+        "description": "Black longsleeve shirt with Foam Everything retro logo, crew neck",
+        "product_type": "Longsleeve",
+        "color": "Black",
+        "brand": "Foam Everything",
+        "price_range": "$30-$34",
+        "use_cases": ["Product card", "Collection display"]
+      }
+    ],
+    "products_nascar_racing": [
+      {
+        "filename": "SPFRACING-HOODIE.webp",
+        "path": "/images/SPFRACING-HOODIE.webp",
+        "size_bytes": 374386,
+        "size_human": "366 KB",
+        "description": "Black hoodie with NASCAR-style 'SPRAYFOAM Insulation' logo - racing stripes in yellow/red/white/blue",
+        "product_type": "Hoodie",
+        "color": "Black",
+        "brand": "SprayFoam Racing",
+        "logo_style": "NASCAR racing aesthetic",
+        "use_cases": ["NASCAR section", "Racing collection", "Product card"]
+      },
+      {
+        "filename": "SPFRACING_LONGSLEVE.webp",
+        "path": "/images/SPFRACING_LONGSLEVE.webp",
+        "size_bytes": 37344,
+        "size_human": "36 KB",
+        "description": "Black longsleeve with NASCAR-style 'SPRAYFOAM Insulation' logo",
+        "product_type": "Longsleeve",
+        "color": "Black",
+        "brand": "SprayFoam Racing",
+        "use_cases": ["NASCAR section", "Racing collection"]
+      },
+      {
+        "filename": "sprayfoam-nascar.png",
+        "path": "/images/sprayfoam-nascar.png",
+        "size_bytes": 259169,
+        "size_human": "253 KB",
+        "description": "Black t-shirt with NASCAR-style 'SPRAYFOAM Insulation' logo",
+        "product_type": "T-Shirt",
+        "color": "Black",
+        "brand": "SprayFoam Racing",
+        "use_cases": ["NASCAR section", "Product card"]
+      },
+      {
+        "filename": "GI-FOamer-tshirt.png",
+        "path": "/images/GI-FOamer-tshirt.png",
+        "size_bytes": 245101,
+        "size_human": "239 KB",
+        "description": "Black t-shirt with 'FOAMER - A Real Insulation Hero' GI Joe parody logo in red/white/blue",
+        "product_type": "T-Shirt",
+        "color": "Black",
+        "brand": "Foam Everything",
+        "design_name": "GI Foamer",
+        "parody_of": "GI Joe logo",
+        "use_cases": ["Featured product", "Fun designs section"]
+      }
+    ],
+    "products_vegas_2026": [
+      {
+        "filename": "las-vegas.webp",
+        "path": "/images/las-vegas.webp",
+        "size_bytes": 259008,
+        "size_human": "253 KB",
+        "description": "Vegas 2026 T-shirt - FRONT: 'Las Vegas' graffiti text with skyline silhouette. BACK: Neon Vegas sign design with 'SPRAYFOAM Vegas' and palm tree",
+        "product_type": "T-Shirt",
+        "color": "Black",
+        "collection": "Vegas 2026",
+        "design_elements": ["Las Vegas graffiti text", "City skyline", "Neon sign", "Palm tree", "Slot machine icons"],
+        "colors_in_design": ["white", "neon green", "neon pink", "cyan"],
+        "use_cases": ["Vegas 2026 section", "Pre-order featured", "Convention merch"],
+        "preorder_available": true
+      },
+      {
+        "filename": "las-vegas.png",
+        "path": "/images/las-vegas.png",
+        "size_bytes": 437966,
+        "size_human": "428 KB",
+        "description": "PNG version of Vegas t-shirt"
+      },
+      {
+        "filename": "sprayfoam-vegas-hoodie-web1.webp",
+        "path": "/images/sprayfoam-vegas-hoodie-web1.webp",
+        "size_bytes": 57068,
+        "size_human": "56 KB",
+        "optimized": true,
+        "original_size": "5.5 MB",
+        "compression_ratio": "99%",
+        "dimensions": "1200x1200",
+        "description": "Vegas 2026 Hoodie - FRONT: 'Las Vegas' graffiti with skyline. BACK: Neon 'SPRAYFOAM Vegas' sign with palm tree, slot icons, spray gun logo",
+        "content": "Black hoodie mockup showing front and back views, charcoal/washed black fabric texture",
+        "product_type": "Hoodie",
+        "color": "Black (washed/charcoal)",
+        "collection": "Vegas 2026",
+        "design_elements": ["Las Vegas graffiti text", "Vegas skyline silhouette", "Neon sign frame", "Palm tree", "WORK 24/7 arrow", "NO VACANCY text", "Spray gun icon"],
+        "colors_in_design": ["white", "neon green", "neon pink", "cyan", "blue"],
+        "use_cases": ["Vegas 2026 section", "Pre-order featured", "Product card"],
+        "preorder_available": true,
+        "variants": {
+          "thumbnail": "sprayfoam-vegas-hoodie-web1-thumb.webp (16 KB, 400px)"
+        }
+      },
+      {
+        "filename": "sprayfoam-vegas-hoodie-web1-thumb.webp",
+        "path": "/images/sprayfoam-vegas-hoodie-web1-thumb.webp",
+        "size_bytes": 16178,
+        "size_human": "16 KB",
+        "dimensions": "400x400",
+        "description": "Thumbnail version of Vegas hoodie",
+        "use_cases": ["Product grid", "Cart thumbnails", "Quick view"]
+      },
+      {
+        "filename": "sprayfoam-vegas-hoodie-web1.png",
+        "path": "/images/sprayfoam-vegas-hoodie-web1.png",
+        "size_bytes": 5771200,
+        "size_human": "5.5 MB",
+        "description": "Original PNG - use WebP version instead for web",
+        "note": "Keep for print/high-res needs only"
+      },
+      {
+        "filename": "josh-vegas-mirrored-longsleeves.webp",
+        "path": "/images/josh-vegas-mirrored-longsleeves.webp",
+        "size_bytes": 54432,
+        "size_human": "53 KB",
+        "optimized": true,
+        "original_size": "5.5 MB",
+        "compression_ratio": "99%",
+        "dimensions": "1200x1200",
+        "description": "Vegas 2026 Longsleeve - FRONT: 'Las Vegas' graffiti with skyline. BACK: Neon 'SPRAYFOAM Vegas' sign design",
+        "content": "Black longsleeve mockup showing front and back views, crew neck style",
+        "product_type": "Longsleeve",
+        "color": "Black",
+        "collection": "Vegas 2026",
+        "design_elements": ["Las Vegas graffiti text", "Vegas skyline", "Neon sign frame", "Palm tree", "WORK 24/7", "NO VACANCY"],
+        "colors_in_design": ["white", "neon green", "neon pink", "cyan", "blue"],
+        "use_cases": ["Vegas 2026 section", "Pre-order featured", "Product card"],
+        "preorder_available": true,
+        "variants": {
+          "thumbnail": "josh-vegas-mirrored-longsleeves-thumb.webp (16 KB, 400px)"
+        }
+      },
+      {
+        "filename": "josh-vegas-mirrored-longsleeves-thumb.webp",
+        "path": "/images/josh-vegas-mirrored-longsleeves-thumb.webp",
+        "size_bytes": 16350,
+        "size_human": "16 KB",
+        "dimensions": "400x400",
+        "description": "Thumbnail version of Vegas longsleeve",
+        "use_cases": ["Product grid", "Cart thumbnails", "Quick view"]
+      },
+      {
+        "filename": "josh-vegas-mirrored-longsleeves.png",
+        "path": "/images/josh-vegas-mirrored-longsleeves.png",
+        "size_bytes": 5771200,
+        "size_human": "5.5 MB",
+        "description": "Original PNG - use WebP version instead for web",
+        "note": "Keep for print/high-res needs only"
+      },
+      {
+        "filename": "sprayfoam-vegas-render.webp",
+        "path": "/images/sprayfoam-vegas-render.webp",
+        "size_bytes": 199524,
+        "size_human": "195 KB",
+        "optimized": true,
+        "original_size": "2.4 MB",
+        "compression_ratio": "92%",
+        "dimensions": "1920x825",
+        "description": "Vegas neon sign render - 'SPRAYFOAM Vegas' in classic Vegas neon style with lights and bulbs",
+        "content": "3D rendered neon sign with 'SPRAYFOAM Vegas' text, vintage Vegas marquee with golden light bulbs border, diamond plate texture, globe icon, classic Vegas vertical 'VEGAS' letters on right",
+        "style": "Classic Vegas neon signage / retro casino",
+        "colors": ["neon pink", "neon green", "yellow/gold bulbs", "cyan", "red"],
+        "aspect_ratio": "21:9 ultrawide banner",
+        "use_cases": ["Vegas 2026 hero banner", "Event promotion", "Section header", "Email banner"],
+        "variants": {
+          "medium": "sprayfoam-vegas-render-medium.webp (99 KB, 1200px)",
+          "thumbnail": "sprayfoam-vegas-render-thumb.webp (17 KB, 400px)"
+        }
+      },
+      {
+        "filename": "sprayfoam-vegas-render-medium.webp",
+        "path": "/images/sprayfoam-vegas-render-medium.webp",
+        "size_bytes": 101354,
+        "size_human": "99 KB",
+        "dimensions": "1200x516",
+        "description": "Medium-sized Vegas render for standard displays",
+        "use_cases": ["Section headers", "Tablet displays", "Email headers"]
+      },
+      {
+        "filename": "sprayfoam-vegas-render-thumb.webp",
+        "path": "/images/sprayfoam-vegas-render-thumb.webp",
+        "size_bytes": 17442,
+        "size_human": "17 KB",
+        "dimensions": "400x172",
+        "description": "Thumbnail Vegas render",
+        "use_cases": ["Preview cards", "Mobile thumbnails"]
+      },
+      {
+        "filename": "sprayfoam-vegas-render.png",
+        "path": "/images/sprayfoam-vegas-render.png",
+        "size_bytes": 2549464,
+        "size_human": "2.4 MB",
+        "description": "Original PNG - use WebP version instead for web",
+        "note": "Keep for print/high-res needs only"
+      }
+    ],
+    "products_onlyfoam": [
+      {
+        "filename": "onlyfoam-hoodie.webp",
+        "path": "/images/onlyfoam-hoodie.webp",
+        "size_bytes": 38604,
+        "size_human": "38 KB",
+        "description": "Black hoodie with OnlyFoam logo - spray gun icon in circle, 'Only' in white, 'Foam' in cyan script",
+        "product_type": "Hoodie",
+        "color": "Black",
+        "brand": "OnlyFoam",
+        "logo_colors": ["white", "cyan"],
+        "use_cases": ["OnlyFoam section", "Product card"]
+      },
+      {
+        "filename": "onlyfoam-longsleeve.webp",
+        "path": "/images/onlyfoam-longsleeve.webp",
+        "size_bytes": 33958,
+        "size_human": "33 KB",
+        "description": "Black longsleeve with OnlyFoam logo",
+        "product_type": "Longsleeve",
+        "color": "Black",
+        "brand": "OnlyFoam",
+        "use_cases": ["OnlyFoam section", "Product card"]
+      },
+      {
+        "filename": "onlyfoam-single-shirt-designs-colleciton.webp",
+        "path": "/images/onlyfoam-single-shirt-designs-colleciton.webp",
+        "size_bytes": 127044,
+        "size_human": "124 KB",
+        "description": "Black t-shirt with OnlyFoam logo",
+        "product_type": "T-Shirt",
+        "color": "Black",
+        "brand": "OnlyFoam",
+        "use_cases": ["OnlyFoam section", "Product card"]
+      },
+      {
+        "filename": "onlyfoam-single-shirt-designs-colleciton.png",
+        "path": "/images/onlyfoam-single-shirt-designs-colleciton.png",
+        "size_bytes": 239381,
+        "size_human": "234 KB",
+        "description": "PNG version"
+      },
+      {
+        "filename": "ONLY-FOAM-GROUP-PIC1.webp",
+        "path": "/images/ONLY-FOAM-GROUP-PIC1.webp",
+        "size_bytes": 1138108,
+        "size_human": "1.1 MB",
+        "description": "OnlyFoam 3D character group photo - 6 mascot characters including bear, bulldog, gorilla in hoodie, businessman, and others",
+        "content": "3D rendered group of cartoon mascot characters representing the OnlyFoam brand, sitting together like a team photo",
+        "characters": ["Brown bear with sunglasses", "Orange bulldog in t-shirt", "Gorilla in blue hoodie with gas mask", "Foam applicator in black suit (F.O.A.M.)", "Human businessman", "Brown bulldog with attitude"],
+        "branding": "OnlyFoam logo top-left, ONLY-FOAM.COM bottom-right",
+        "style": "3D Pixar-style cartoon characters",
+        "use_cases": ["OnlyFoam hero section", "3D services promo", "Brand personality", "About section"]
+      },
+      {
+        "filename": "ONLY-FOAM-GROUP-PIC1-1.webp",
+        "path": "/images/ONLY-FOAM-GROUP-PIC1-1.webp",
+        "size_bytes": 1138108,
+        "size_human": "1.1 MB",
+        "description": "Duplicate of group pic"
+      }
+    ],
+    "nascar_cars_sponsorship": [
+      {
+        "filename": "sprayfoam_daytona_nascar_allstate.png",
+        "path": "/images/sprayfoam_daytona_nascar_allstate.png",
+        "size_bytes": 665679,
+        "size_human": "650 KB",
+        "description": "NASCAR stock car with American flag/military patriotic wrap, eagle graphic on hood",
+        "content": "3D rendered NASCAR Camaro with USA flag wrap, military/patriotic theme, gold eagle emblem",
+        "style": "Patriotic/Military tribute",
+        "use_cases": ["NASCAR sponsorship section", "Patriotic theme"]
+      },
+      {
+        "filename": "NEW-BLANK-STOCKCAR-JOSH.jpg",
+        "path": "/images/NEW-BLANK-STOCKCAR-JOSH.jpg",
+        "size_bytes": 1066610,
+        "size_human": "1.0 MB",
+        "description": "HERO IMAGE - NASCAR Camaro stock car with holographic/iridescent wrap, nighttime city background, SPRAYFOAM Insulation logo overlay",
+        "content": "Stunning 3D render of Chevy Camaro NASCAR with chrome/holographic paint, headlights on, city lights background",
+        "branding": "SPRAYFOAM Insulation logo top, FOAMSWAG.COM bottom-right",
+        "style": "Cyberpunk/Premium automotive",
+        "aspect_ratio": "16:9 wide",
+        "use_cases": ["NASCAR section hero", "Homepage featured", "Sponsorship promotion"],
+        "hero_worthy": true
+      },
+      {
+        "filename": "yourlogohere.webp",
+        "path": "/images/yourlogohere.webp",
+        "size_bytes": 239904,
+        "size_human": "234 KB",
+        "description": "3D button/badge with 'YOUR LOGO HERE' text - placeholder for sponsor logos",
+        "content": "Circular 3D rendered button in teal/orange with 'YOUR LOGO HERE' text",
+        "use_cases": ["NASCAR sponsorship signup", "Placeholder for company logos", "CTA for sponsorship"]
+      }
+    ],
+    "backgrounds_textures": [
+      {
+        "filename": "swagwars-trenches.jpg",
+        "path": "/images/swagwars-trenches.jpg",
+        "size_bytes": 340981,
+        "size_human": "333 KB",
+        "description": "Sandbag wall texture - stacked military sandbags forming a wall",
+        "content": "Repeating pattern of tan/beige sandbags stacked in rows",
+        "style": "Military/Trenches theme",
+        "use_cases": ["Swag Wars section background", "Military theme sections"]
+      },
+      {
+        "filename": "photo-1501166222995-ff31c7e93cef.jpeg",
+        "path": "/images/photo-1501166222995-ff31c7e93cef.jpeg",
+        "size_bytes": 213962,
+        "size_human": "209 KB",
+        "description": "Diamond plate metal texture - industrial steel floor pattern",
+        "content": "Close-up of diamond plate / checker plate metal surface, metallic grey",
+        "style": "Industrial/Construction",
+        "use_cases": ["Background texture", "Industrial sections", "Footer background"]
+      }
+    ],
+    "equipment_3d": [
+      {
+        "filename": "fusion-verge.webp",
+        "path": "/images/fusion-verge.webp",
+        "size_bytes": 16732,
+        "size_human": "16 KB",
+        "description": "3D model of Graco Fusion spray foam gun - main silver/black gun with purple and blue color variants shown smaller",
+        "content": "Professional spray foam application gun, 3D rendered, showing equipment used in industry",
+        "colors_available": ["Silver/Black", "Purple", "Blue"],
+        "use_cases": ["3D services section", "Equipment showcase", "NerfFusion reference"],
+        "related_product": "NerfFusion.com - Nerf blaster shells styled like this gun"
+      }
+    ],
+    "event_banners": [
+      {
+        "filename": "INSULATION-CUP-TITLE.jpg",
+        "path": "/images/INSULATION-CUP-TITLE.jpg",
+        "size_bytes": 226797,
+        "size_human": "222 KB",
+        "description": "Daytona Insulation Speedway - Spray Foam Insulation Cup banner",
+        "content": "Racing event banner with Daytona logo, NASCAR-style flags, speedway grandstands at sunset, 'SPRAY FOAM INSULATION CUP' text",
+        "style": "NASCAR event promotional",
+        "use_cases": ["Racing events section", "Insulation Cup promo"]
+      }
+    ],
+    "design_collections": [
+      {
+        "filename": "1k.png",
+        "path": "/images/1k.png",
+        "size_bytes": 1611164,
+        "size_human": "1.5 MB",
+        "description": "Design collage/mood board - Collection of spray foam industry t-shirt designs and logos",
+        "content": "Grid of various designs including: FoamHub, Foam Guns, GunHog, SprayFoam Life, OnlyFoam, SprayFoam Joker, SprayFoam Brotherhood, FoamLife, Ride The Wave character",
+        "designs_visible": [
+          "FoamHub (parody of PornHub logo)",
+          "Foam Guns For Hire",
+          "GunHog character",
+          "Hulk-like foam character",
+          "SprayFoam Life skull",
+          "Joker-themed respirator character",
+          "SprayFoam Brotherhood biker style",
+          "E-30 Foam Home moon scene",
+          "Ride The Wave surfer character"
+        ],
+        "use_cases": ["Design showcase", "Portfolio display", "Mood board reference"]
+      },
+      {
+        "filename": "1k-1.png",
+        "path": "/images/1k-1.png",
+        "size_bytes": 1777140,
+        "size_human": "1.7 MB",
+        "description": "Extended design collage - More spray foam designs and brand variations",
+        "content": "Larger collection including all major brand designs, The Godfoamer parody, Foam Wizard, various character designs",
+        "designs_visible": [
+          "Foam Everything logo",
+          "FOAMER GI Joe parody",
+          "Foam Wizard",
+          "The Godfoamer (Godfather parody)",
+          "NASCAR car designs",
+          "Various skull/biker designs",
+          "SprayFoam lifestyle graphics"
+        ],
+        "use_cases": ["Full portfolio showcase", "Design inspiration", "Brand overview"]
+      }
+    ]
+  },
+  "optimization_notes": {
+    "optimization_completed": "2026-01-03",
+    "files_optimized": [
+      {
+        "original": "sprayfoam-vegas-hoodie-web1.png (5.5 MB)",
+        "optimized": "sprayfoam-vegas-hoodie-web1.webp (56 KB)",
+        "savings": "99% reduction"
+      },
+      {
+        "original": "josh-vegas-mirrored-longsleeves.png (5.5 MB)",
+        "optimized": "josh-vegas-mirrored-longsleeves.webp (53 KB)",
+        "savings": "99% reduction"
+      },
+      {
+        "original": "sprayfoam-vegas-render.png (2.4 MB)",
+        "optimized": "sprayfoam-vegas-render.webp (195 KB)",
+        "savings": "92% reduction"
+      }
+    ],
+    "total_savings": "13.4 MB reduced to 304 KB (97.7% overall)",
+    "variants_created": [
+      "sprayfoam-vegas-hoodie-web1-thumb.webp (16 KB)",
+      "josh-vegas-mirrored-longsleeves-thumb.webp (16 KB)",
+      "sprayfoam-vegas-render-medium.webp (99 KB)",
+      "sprayfoam-vegas-render-thumb.webp (17 KB)"
+    ],
+    "recommendations": [
+      "Use .webp versions for all web display",
+      "Use -thumb variants for product grids and cart",
+      "Use -medium variant for tablet/email headers",
+      "Keep original PNGs only for print production",
+      "Lazy load images below the fold",
+      "Use srcset for responsive images"
+    ]
+  },
+  "usage_guide": {
+    "hero_sections": [
+      "Foam-Everything-Header.webp - Main homepage hero",
+      "NEW-BLANK-STOCKCAR-JOSH.jpg - NASCAR section hero",
+      "sprayfoam-vegas-render.webp - Vegas 2026 hero (195 KB optimized)",
+      "ONLY-FOAM-GROUP-PIC1.webp - OnlyFoam section hero"
+    ],
+    "product_cards": [
+      "Use .webp versions for web performance",
+      "All product images have transparent or solid backgrounds",
+      "Consistent mockup style across collections"
+    ],
+    "backgrounds": [
+      "swagwars-trenches.jpg - Swag Wars military theme",
+      "photo-1501166222995-ff31c7e93cef.jpeg - Industrial metal texture",
+      "foameverything.webp - OnlyFoam metaverse club"
+    ]
+  },
+  "color_themes_by_section": {
+    "foam_everything": {
+      "primary": "cyan/pink/purple gradient",
+      "style": "Retro 80s synthwave"
+    },
+    "nascar_racing": {
+      "primary": "yellow/red/white/blue racing stripes",
+      "style": "NASCAR motorsport"
+    },
+    "vegas_2026": {
+      "primary": "neon green/pink/cyan",
+      "style": "Vegas neon signs"
+    },
+    "onlyfoam": {
+      "primary": "white/cyan on black",
+      "style": "Clean, parody of OnlyFans"
+    }
+  }
+}

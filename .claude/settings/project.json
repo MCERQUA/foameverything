@@ -1,0 +1,47 @@
+{
+  "name": "Foam Everything",
+  "description": "Spray foam industry merchandise hub and e-commerce platform",
+  "version": "2.0",
+  "type": "web-application",
+  "stack": {
+    "frontend": "Next.js 14+",
+    "styling": "Tailwind CSS",
+    "ecommerce": "Shopify/Medusa",
+    "payments": "Stripe",
+    "hosting": "Vercel",
+    "database": "PostgreSQL",
+    "3d": "Three.js"
+  },
+  "features": [
+    "e-commerce",
+    "user-authentication",
+    "3d-interactive",
+    "event-promotion",
+    "industry-hub"
+  ],
+  "relatedSites": [
+    {
+      "name": "SprayFoamTV",
+      "url": "https://sprayfoamtv.com",
+      "type": "streaming-platform"
+    },
+    {
+      "name": "SprayFoamRadio",
+      "url": "https://sprayfoamradio.com",
+      "type": "music-platform"
+    },
+    {
+      "name": "NerfFusion",
+      "url": "https://nerffusion.com",
+      "type": "e-commerce"
+    }
+  ],
+  "upcomingEvent": {
+    "name": "SprayFoam 2026 Convention & Expo",
+    "dates": "March 22-25, 2026",
+    "venue": "Westgate Las Vegas Resort & Casino",
+    "address": "3000 Paradise Road, Las Vegas, NV 89109",
+    "registrationUrl": "https://sprayfoamshow.org/",
+    "status": "Exhibit booths SOLD OUT"
+  }
+}
