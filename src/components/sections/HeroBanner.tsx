@@ -81,14 +81,14 @@ export function HeroBanner() {
               text="FOAM"
               variant="cascade"
               as="h1"
-              className="text-6xl md:text-7xl lg:text-8xl font-black uppercase tracking-wider text-white"
+              className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-wider text-white"
               staggerDelay={0.05}
             />
             <LetterAnimation
               text="EVERYTHING"
               variant="cascade"
               as="h1"
-              className="text-6xl md:text-7xl lg:text-8xl font-black uppercase tracking-wider heading-cyan"
+              className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-wider heading-cyan"
               staggerDelay={0.05}
               delay={0.3}
             />
@@ -103,14 +103,14 @@ export function HeroBanner() {
 
           {/* CTA Buttons */}
           <ScrollReveal variant="fadeUp" delay={0.8}>
-            <div className="flex flex-wrap gap-4">
-              <MagneticButton href="/shop/hoodies" variant="primary" className="text-lg px-8 py-4">
+            <div className="flex flex-wrap gap-3 sm:gap-4">
+              <MagneticButton href="/shop/hoodies" variant="primary" className="text-sm sm:text-base md:text-lg px-4 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4">
                 Order Hoodies
               </MagneticButton>
-              <MagneticButton href="/shop/tshirts" variant="primary" className="text-lg px-8 py-4">
+              <MagneticButton href="/shop/tshirts" variant="primary" className="text-sm sm:text-base md:text-lg px-4 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4">
                 Order T-Shirts
               </MagneticButton>
-              <MagneticButton href="/shop/longsleeves" variant="primary" className="text-lg px-8 py-4">
+              <MagneticButton href="/shop/longsleeves" variant="primary" className="text-sm sm:text-base md:text-lg px-4 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4">
                 Order Long Sleeves
               </MagneticButton>
             </div>

@@ -99,14 +99,14 @@ export function Vegas2026Banner() {
               <MagneticButton
                 href="https://sprayfoamshow.org/"
                 variant="red"
-                className="text-lg px-8 py-4"
+                className="text-sm sm:text-base md:text-lg px-5 py-3 sm:px-6 sm:py-3.5 md:px-8 md:py-4"
               >
                 Register Now
               </MagneticButton>
               <MagneticButton
                 href="/shop/vegas-2026"
                 variant="primary"
-                className="text-lg px-8 py-4"
+                className="text-sm sm:text-base md:text-lg px-5 py-3 sm:px-6 sm:py-3.5 md:px-8 md:py-4"
               >
                 Pre-Order Merch
               </MagneticButton>

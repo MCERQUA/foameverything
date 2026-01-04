@@ -64,7 +64,7 @@ export function ProductGrid({
               text={title}
               variant="zoom"
               as="h2"
-              className="text-4xl md:text-5xl font-black uppercase tracking-wider heading-cyan mb-4"
+              className="text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-wider heading-cyan mb-4"
               staggerDelay={0.04}
             />
             <ScrollReveal variant="fadeUp" delay={0.3}>
@@ -91,7 +91,7 @@ export function ProductGrid({
         {showViewAll && (
           <ScrollReveal variant="fadeUp" delay={0.5}>
             <div className="text-center mt-12">
-              <MagneticButton href="/shop" variant="primary" className="text-lg px-10 py-4">
+              <MagneticButton href="/shop" variant="primary" className="text-sm sm:text-base md:text-lg px-6 py-3 sm:px-8 sm:py-3.5 md:px-10 md:py-4">
                 View All Products
               </MagneticButton>
             </div>

@@ -41,16 +41,17 @@ function TimeUnit({
   label: string;
   variant: 'default' | 'large' | 'compact';
 }) {
+  // Responsive size classes - scale down on mobile
   const sizeClasses = {
-    default: 'w-16 h-16 text-2xl',
-    large: 'w-24 h-24 text-4xl',
-    compact: 'w-12 h-12 text-lg',
+    default: 'w-12 h-12 text-lg sm:w-14 sm:h-14 sm:text-xl md:w-16 md:h-16 md:text-2xl',
+    large: 'w-14 h-14 text-xl sm:w-16 sm:h-16 sm:text-2xl md:w-20 md:h-20 md:text-3xl lg:w-24 lg:h-24 lg:text-4xl',
+    compact: 'w-10 h-10 text-base sm:w-11 sm:h-11 sm:text-lg md:w-12 md:h-12',
   };
 
   const labelSizes = {
-    default: 'text-xs',
-    large: 'text-sm',
-    compact: 'text-[10px]',
+    default: 'text-[10px] sm:text-xs',
+    large: 'text-[10px] sm:text-xs md:text-sm',
+    compact: 'text-[8px] sm:text-[10px]',
   };
 
   return (
@@ -99,13 +100,13 @@ export function CountdownTimer({
         {label && (
           <p className="text-[var(--text-grey)] text-sm mb-4 uppercase tracking-widest">{label}</p>
         )}
-        <div className="flex gap-3">
+        <div className="flex gap-1.5 sm:gap-2 md:gap-3">
           <TimeUnit value={0} label="Days" variant={variant} />
-          <span className="text-[var(--neon-red)] text-2xl self-center">:</span>
+          <span className="text-[var(--neon-red)] text-base sm:text-lg md:text-2xl self-center">:</span>
           <TimeUnit value={0} label="Hours" variant={variant} />
-          <span className="text-[var(--neon-red)] text-2xl self-center">:</span>
+          <span className="text-[var(--neon-red)] text-base sm:text-lg md:text-2xl self-center">:</span>
           <TimeUnit value={0} label="Mins" variant={variant} />
-          <span className="text-[var(--neon-red)] text-2xl self-center">:</span>
+          <span className="text-[var(--neon-red)] text-base sm:text-lg md:text-2xl self-center">:</span>
           <TimeUnit value={0} label="Secs" variant={variant} />
         </div>
       </div>
@@ -133,13 +134,13 @@ export function CountdownTimer({
       {label && (
         <p className="text-[var(--text-grey)] text-sm mb-4 uppercase tracking-widest">{label}</p>
       )}
-      <div className="flex gap-3">
+      <div className="flex gap-1.5 sm:gap-2 md:gap-3">
         <TimeUnit value={timeLeft.days} label="Days" variant={variant} />
-        <span className="text-[var(--neon-red)] text-2xl self-center animate-pulse">:</span>
+        <span className="text-[var(--neon-red)] text-base sm:text-lg md:text-2xl self-center animate-pulse">:</span>
         <TimeUnit value={timeLeft.hours} label="Hours" variant={variant} />
-        <span className="text-[var(--neon-red)] text-2xl self-center animate-pulse">:</span>
+        <span className="text-[var(--neon-red)] text-base sm:text-lg md:text-2xl self-center animate-pulse">:</span>
         <TimeUnit value={timeLeft.minutes} label="Mins" variant={variant} />
-        <span className="text-[var(--neon-red)] text-2xl self-center animate-pulse">:</span>
+        <span className="text-[var(--neon-red)] text-base sm:text-lg md:text-2xl self-center animate-pulse">:</span>
         <TimeUnit value={timeLeft.seconds} label="Secs" variant={variant} />
       </div>
     </div>

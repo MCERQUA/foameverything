@@ -51,14 +51,14 @@ export function SwagWars() {
           text="SIGN UP TO"
           variant="flip"
           as="h2"
-          className="text-3xl md:text-4xl font-bold uppercase tracking-wider text-white mb-2"
+          className="text-2xl sm:text-3xl md:text-4xl font-bold uppercase tracking-wider text-white mb-2"
           staggerDelay={0.04}
         />
         <LetterAnimation
           text="SWAG WARS!"
           variant="glitch"
           as="h2"
-          className="text-5xl md:text-6xl lg:text-7xl font-black uppercase tracking-wider heading-yellow mb-8"
+          className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-wider heading-yellow mb-8"
           staggerDelay={0.05}
           delay={0.3}
         />
@@ -73,7 +73,7 @@ export function SwagWars() {
 
         {/* CTA */}
         <ScrollReveal variant="scale" delay={0.8}>
-          <MagneticButton href="/swagwars" variant="gold" className="text-xl px-10 py-5">
+          <MagneticButton href="/swagwars" variant="gold" className="text-base sm:text-lg md:text-xl px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-5">
             Signup Now!
           </MagneticButton>
         </ScrollReveal>

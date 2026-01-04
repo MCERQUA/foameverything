@@ -29,14 +29,14 @@ export function NASCARSection() {
               text="GET YOUR COMPANY"
               variant="cascade"
               as="h2"
-              className="text-3xl md:text-4xl font-bold uppercase tracking-wider text-white mb-2"
+              className="text-2xl sm:text-3xl md:text-4xl font-bold uppercase tracking-wider text-white mb-2"
               staggerDelay={0.03}
             />
             <LetterAnimation
               text="BRANDED NASCAR"
               variant="cascade"
               as="h2"
-              className="text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-wider heading-yellow mb-6 whitespace-nowrap"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-wider heading-yellow mb-6"
               staggerDelay={0.04}
               delay={0.4}
             />
@@ -52,7 +52,7 @@ export function NASCARSection() {
               <MagneticButton
                 href="https://sprayfoamgames.com/nascar-signup/"
                 variant="nascar"
-                className="text-lg px-8 py-4"
+                className="text-sm sm:text-base md:text-lg px-5 py-3 sm:px-6 sm:py-3.5 md:px-8 md:py-4"
               >
                 NASCAR Company Signup
               </MagneticButton>

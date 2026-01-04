@@ -74,7 +74,7 @@ export function IndustryHub() {
             text="INDUSTRY HUB"
             variant="wave"
             as="h2"
-            className="text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-wider heading-cyan mb-4"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-wider heading-cyan mb-4"
             staggerDelay={0.05}
           />
 
