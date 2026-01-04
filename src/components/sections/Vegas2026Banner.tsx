@@ -36,7 +36,7 @@ const highlights = [
 
 export function Vegas2026Banner() {
   return (
-    <section className="relative min-h-[90vh] flex items-center overflow-hidden section-vegas">
+    <section className="relative min-h-[90vh] flex items-center overflow-x-clip overflow-y-visible section-vegas">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -65,12 +65,12 @@ export function Vegas2026Banner() {
           </ScrollReveal>
 
           {/* Main Heading with Letter Animation */}
-          <div className="mb-6">
+          <div className="mb-6 overflow-visible">
             <LetterAnimation
               text="VEGAS 2026"
               variant="neon"
               as="h1"
-              className="text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-wider heading-red"
+              className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-tight sm:tracking-wider heading-red"
               staggerDelay={0.06}
             />
           </div>

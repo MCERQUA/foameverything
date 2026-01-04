@@ -8,7 +8,7 @@ import { ScrollReveal } from '@/components/animations/ScrollReveal';
 
 export function HeroBanner() {
   return (
-    <section className="relative min-h-[80vh] flex items-center bg-[var(--bg-black)] overflow-hidden">
+    <section className="relative min-h-[80vh] flex items-center bg-[var(--bg-black)] overflow-x-clip overflow-y-visible">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -76,19 +76,19 @@ export function HeroBanner() {
           </ScrollReveal>
 
           {/* Main Heading */}
-          <div className="mb-6">
+          <div className="mb-6 overflow-visible">
             <LetterAnimation
               text="FOAM"
               variant="cascade"
               as="h1"
-              className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-wider text-white"
+              className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-tight sm:tracking-wider text-white"
               staggerDelay={0.05}
             />
             <LetterAnimation
               text="EVERYTHING"
               variant="cascade"
               as="h1"
-              className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-wider heading-cyan"
+              className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-tight sm:tracking-wider heading-cyan"
               staggerDelay={0.05}
               delay={0.3}
             />
