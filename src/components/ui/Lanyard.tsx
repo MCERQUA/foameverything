@@ -99,6 +99,7 @@ export default function Lanyard({
           z-index: 50;
           pointer-events: auto;
           overflow: visible;
+          touch-action: none;
         }
         @media (max-width: 768px) {
           .lanyard-wrapper {
