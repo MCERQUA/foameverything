@@ -4,10 +4,14 @@ import { HeroBanner } from "@/components/sections/HeroBanner";
 import { SwagWars } from "@/components/sections/SwagWars";
 import { NASCARSection } from "@/components/sections/NASCARSection";
 import { ProductGrid } from "@/components/sections/ProductGrid";
+import { LanyardWrapper } from "@/components/ui/LanyardWrapper";
 
 export default function Home() {
   return (
     <>
+      {/* Interactive Tradeshow Badge */}
+      <LanyardWrapper position={[0, 0, 20]} gravity={[0, -40, 0]} />
+
       {/* Vegas 2026 Event Banner - TOP PRIORITY */}
       <Vegas2026Banner />
 
