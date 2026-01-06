@@ -92,17 +92,20 @@ export default function Lanyard({
       <style jsx>{`
         .lanyard-wrapper {
           position: fixed;
-          top: 0;
-          left: 0;
-          width: 280px;
-          height: 350px;
+          top: -50px;
+          left: -50px;
+          width: 380px;
+          height: 450px;
           z-index: 50;
           pointer-events: auto;
+          overflow: visible;
         }
         @media (max-width: 768px) {
           .lanyard-wrapper {
-            width: 160px;
-            height: 220px;
+            top: -30px;
+            left: -30px;
+            width: 220px;
+            height: 280px;
           }
         }
       `}</style>
